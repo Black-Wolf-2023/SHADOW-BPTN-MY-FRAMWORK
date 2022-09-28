@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shadow-css</title>
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-
-    <!-- <script src="app.js"></script>
-    <script>
-      let shadow = new Shadow();
-      let styles = [
-        {
-          name: "test",
-          over_rite: true,
-          sty: ["dark"],
-        },
-        {
-          name: "test_1",
-          over_rite: false,
-          sty: ["light"],
-        },
-        {
-          name: "test_2",
-          over_rite: true,
-          sty: ["primary"],
-        },
-      ];
-      shadow.set(styles);
-    </script> -->
-    <script src="./js/tailwindcss/tailwindcss.js"></script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
+      <!-- ================= Using Shadow Consept ================ -->
+    <div class="p-12">
+      <figure class="block-1">
+        <img class="block-2" src="https://picsum.photos/200/300" alt="" width="384" height="512" />
+        <div class="block-3">
+          <blockquote>
+            <p class="block-4">
+              “Tailwind CSS is the only framework that I've seen scale on large
+              teams. It’s easy to customize, adapts to any design, and the build
+              size is tiny.”
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="block-5">Sarah Dayan</div>
+            <div class="block-6">
+              Staff Engineer, Algolia
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+      <div class="p-10"></div>
+      <!-- ================= Not Using Shadow Consept ================ -->
+      <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
+        <img class="w-24 h-24 rounded-full mx-auto" src="https://picsum.photos/200/300" alt="" width="384"
+          height="512" />
+        <div class="pt-6 space-y-4">
+          <blockquote>
+            <p class="text-lg font-medium">
+              “Tailwind CSS is the only framework that I've seen scale on large
+              teams. It’s easy to customize, adapts to any design, and the build
+              size is tiny.”
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
+            <div>Staff Engineer, Algolia</div>
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+    <script type="module"t src="./app.js"></script>
   </body>
+
 </html>
