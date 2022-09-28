@@ -1,0 +1,15 @@
+.dark {
+  background-color: darkslateblue;
+  color: lightblue;
+  padding: 10px;
+}
+.light {
+  background-color: lightseagreen;
+  color: darkslategray;
+  padding: 10px;
+}
+.primary {
+  background-color: lightcoral;
+  color: white;
+  padding: 10px;
+}
